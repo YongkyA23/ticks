@@ -1,0 +1,140 @@
+Yang harus dibuat, register page, ticket page, ticket detail page
+
+Links:
+https://magenta.republika.co.id/posts/210024/newjeans-bakal-comeback-juni-mendatang-ini-kata-label
+https://bangka.tribunnews.com/2023/04/08/heboh-konser-coldplay-2023-di-jakarta-bocor-siap-siap-segini-perkiraan-harga-tiketnya
+https://www.indozone.id/music/XxsdxR0/band-rock-jepang-radwimps-umumkan-tur-konser-asia-2023-berakhir-di-jakarta
+https://www.antaranews.com/berita/3478026/album-debut-jisoo-blackpink-cetak-rekor-penjualan-minggu-pertama
+http://www.kompas.com/hype/read/2023/04/05/155339166/juicy-luicy-gelar-konser-perdana-di-malaysia-pada-25-juni-2023
+https://www.kompas.com/hype/read/2023/04/01/101558766/promotor-umumkan-lokasi-konser-red-velvet-di-indonesia-pada-mei-2023
+
+#image-carousel {
+  position: absolute;
+  top: 130px; /* Change this value to match the height of your navbar */
+  width: 100%;
+  text-align: center;
+}
+
+#image-carousel .splide__arrow--prev {
+  left: 270px; /* move the previous button 20px from the left edge of the container */
+  top: 330px;
+}
+
+#image-carousel .splide__arrow--next {
+  right: 270px; /* move the next button 20px from the right edge of the container */
+  top: 330px;
+}
+
+#image-carousel .splide__slide img {
+  border-radius: 20px; /* set the border-radius to match the container */
+  width: 1400px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+#image-carousel .splide__slide {
+  border-radius: 20px; /* set the border-radius to match the container */
+  overflow: hidden; /* hide the overflow to prevent images from spilling out of individual slides */
+  padding-bottom: 20px;
+}
+
+#image-carousel .splide__list {
+  border-radius: 20px;
+}
+
+#image-carousel button {
+  top: -20px;
+}
+
+
+ #image-carousel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #image-carousel .splide__arrow {
+    position: absolute; /* set position to absolute */
+    top: 50%; /* vertically center the arrows */
+    transform: translateY(-50%); /* vertically center the arrows */
+    z-index: 1; /* set a higher z-index than the carousel to ensure the arrows are above the images */
+  }
+
+  #image-carousel .splide__arrow--prev {
+    /* left: 140px; 
+    top: 270px; */
+    left: 0;
+  }
+
+  #image-carousel .splide__arrow--next {
+    right: 0;
+  }
+
+  #image-carousel .splide__slide img {
+    border-radius: 20px; /* set the border-radius to match the container */
+    width: 1000px;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  #image-carousel .splide__slide {
+    border-radius: 20px; /* set the border-radius to match the container */
+    overflow: hidden; /* hide the overflow to prevent images from spilling out of individual slides */
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  #image-carousel .splide__list {
+    border-radius: 20px;
+  }
+
+  #image-carousel button {
+    top: -20px;
+  }
+  
+  
+  #image-carousel {
+    position: absolute;
+    top: 130px; /* Change this value to match the height of your navbar */
+    width: 700px;
+    text-align: center;
+    left: 40px;
+  }
+
+  #image-carousel .splide__arrow--prev {
+    left: 270px; /* move the previous button 20px from the left edge of the container */
+    top: 330px;
+  }
+
+  #image-carousel .splide__arrow--next {
+    right: 270px; /* move the next button 20px from the right edge of the container */
+    top: 330px;
+  }
+
+  #image-carousel .splide__slide img {
+    border-radius: 20px; /* set the border-radius to match the container */
+    width: 700px;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  #image-carousel .splide__slide {
+    border-radius: 20px; /* set the border-radius to match the container */
+    overflow: hidden; /* hide the overflow to prevent images from spilling out of individual slides */
+    padding-bottom: 20px;
+  }
+
+  #image-carousel .splide__list {
+    border-radius: 20px;
+  }
+
+  #image-carousel button {
+    top: -20px;
+  }
+
+  .newsheader {
+    margin-top: 430px;
+  }

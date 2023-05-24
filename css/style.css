@@ -1,0 +1,267 @@
+* {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding-right: 30px; /* Add space for the icon */
+  border-radius: 6px;
+  border-width: 0px;
+  background-color: #fdefff;
+  height: 40px;
+  width: 356px;
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  color: #b959cb;
+}
+
+.promotion-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #c968db;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.promotion-button img {
+  margin-right: 5px;
+}
+
+.button-text {
+  margin-left: 5px;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  text-indent: 10px; /* adjust the value as needed */
+  color: #c968db;
+}
+
+input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  text-indent: 10px; /* adjust the value as needed */
+  color: #c968db;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  text-indent: 10px; /* adjust the value as needed */
+  color: #c968db;
+}
+
+input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  text-indent: 10px; /* adjust the value as needed */
+  color: #c968db;
+}
+
+input[type="text"] {
+  text-indent: 10px; /* adjust the value as needed */
+  color: #c968db;
+}
+
+input[type="text"]:focus {
+  outline: none; /* Remove default outline */
+  border: none; /* Remove border */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: 4em;
+}
+
+.logo-web {
+  width: 100x;
+  height: 65px;
+  margin-right: 1em;
+}
+
+.search-container {
+  margin-right: 45em;
+}
+
+.promotion-container {
+  margin-left: 6em;
+}
+
+.promo-text {
+  font-size: 18px;
+}
+
+.nav-button {
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+}
+
+.nav-button:hover {
+  cursor: grab;
+}
+
+.login-button {
+  margin-right: 6em;
+  width: 79px;
+  height: 41px;
+  color: #b959cb;
+  background-color: #fdefff;
+}
+
+.register-button {
+  width: 102px;
+  height: 41px;
+  color: #fefefe;
+  background-color: #b959cb;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 59px;
+  background-color: #b982c3;
+  color: #ffffff;
+}
+
+.none {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
+
+.menu {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .logo-web {
+    width: 189px;
+    height: 122px;
+  }
+  .search-container {
+    display: block; /* or flex */
+    margin-top: 10em; /* Optional: Add some spacing between navbar items */
+    margin-left: 1em;
+    margin-bottom: 2em;
+  }
+
+  .search-container input {
+    width: 600px;
+    height: 50px;
+  }
+
+  .search-button {
+    position: absolute;
+    left: 65%;
+  }
+
+  /* Reset the margin-top of .logo-web */
+  .navbaritem .logo-web {
+    margin-top: 0; /* Reset the margin-top to 0 */
+  }
+
+  .nav-button {
+    display: none;
+  }
+  .promotion-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbaritem {
+    flex: 0 0 100%;
+  }
+
+  .search-container {
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-top: -18%;
+    margin-right: 10%;
+    cursor: pointer;
+    padding: 15px; /* Increase the padding to make the icon bigger */
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 30px; /* Increase the width to make the lines longer */
+    height: 4px; /* Increase the height to make the lines thicker */
+    background-color: #b982c3;
+    margin-bottom: 6px; /* Increase the margin to create more spacing between lines */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .menu.show {
+    display: flex;
+    max-height: 500px; /* Adjust the value as needed */
+  }
+
+  .menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

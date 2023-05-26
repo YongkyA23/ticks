@@ -1,7 +1,9 @@
-const menuIcon = document.getElementById("navbaritems");
-const menu = document.getElementById("menu");
+// Get the menu icon and navbar items elements
+const menuIcon = document.getElementById("menu-icon");
+const navbarItems = document.querySelector(".navbaritems");
 
+// Add a click event listener to the menu icon
 menuIcon.addEventListener("click", function () {
-  menu.classList.toggle("show");
-  menuIcon.classList.toggle("open");
+  // Toggle the "open" class on navbar items
+  navbarItems.classList.toggle("open");
 });

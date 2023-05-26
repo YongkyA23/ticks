@@ -130,6 +130,7 @@ input[type="text"]:focus {
 }
 
 .register-button {
+  margin-right: 1em;
   width: 102px;
   height: 41px;
   color: #fefefe;
@@ -173,6 +174,14 @@ footer {
   display: flex;
 }
 
+.mobiledesc {
+  display: none;
+}
+
+.navbaritems {
+  display: flex;
+}
+
 @media screen and (max-width: 800px) {
   .logo-web {
     width: 189px;
@@ -186,25 +195,19 @@ footer {
   }
 
   .search-container input {
-    width: 600px;
+    width: 560px;
     height: 50px;
   }
 
   .search-button {
     position: absolute;
-    left: 65%;
+    left: 90%;
   }
 
   /* Reset the margin-top of .logo-web */
-  .navbaritem .logo-web {
+  .navbarlogo .logo-web {
     margin-top: 0; /* Reset the margin-top to 0 */
-  }
-
-  .nav-button {
-    display: none;
-  }
-  .promotion-button {
-    display: none;
+    margin-left: -70%;
   }
 
   .navbar {
@@ -216,7 +219,8 @@ footer {
   }
 
   .search-container {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 4em;
   }
 
   .menu-toggle {
@@ -225,8 +229,8 @@ footer {
 
   .menu-icon {
     display: block;
-    margin-top: -18%;
-    margin-right: 10%;
+    margin-top: 0%;
+    margin-right: 5%;
     cursor: pointer;
     padding: 15px; /* Increase the padding to make the icon bigger */
   }
@@ -240,28 +244,41 @@ footer {
     transition: transform 0.3s ease-in-out;
   }
 
-  .menu {
+  .navbaritem .register-button {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    width: 340px;
+  }
+
+  .navbaritem .login-button {
+    position: absolute;
+    left: 53%;
+    top: 30%;
+    width: 340px;
+  }
+
+  .mobiledesc {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    color: #8f8f8f;
+  }
+
+  .navbaritem .promotion-button {
+    position: absolute;
+    top: 37%;
+    left: 6%;
+  }
+
+  .navbaritems {
     display: none;
-    flex-direction: column;
-    width: 100%;
-    transition: max-height 0.3s ease-in-out;
-    overflow: hidden;
   }
 
-  .menu.show {
-    display: flex;
-    max-height: 500px; /* Adjust the value as needed */
-  }
-
-  .menu-icon.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu-icon.open span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-icon.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  .navbaritems.open {
+    display: block;
+    margin-left: -64px;
+    height: 250px;
   }
 }

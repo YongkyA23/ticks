@@ -1,4 +1,4 @@
-const menuIcon = document.getElementById("menu-icon");
+const menuIcon = document.getElementById("navbaritems");
 const menu = document.getElementById("menu");
 
 menuIcon.addEventListener("click", function () {

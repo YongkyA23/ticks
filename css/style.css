@@ -182,6 +182,13 @@ footer {
   display: flex;
 }
 
+.tab-content {
+  display: none;
+}
+.tab-content:first-of-type {
+  display: block;
+}
+
 @media screen and (max-width: 800px) {
   .logo-web {
     width: 189px;

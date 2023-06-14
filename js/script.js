@@ -7,3 +7,17 @@ menuIcon.addEventListener("click", function () {
   // Toggle the "open" class on navbar items
   navbarItems.classList.toggle("open");
 });
+
+const tabLinks = document.querySelectorAll(".tab-list a");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = link.getAttribute("href");
+    tabContents.forEach((content) => {
+      content.style.display = "none";
+    });
+    document.querySelector(id).style.display = "block";
+  });
+});

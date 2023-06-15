@@ -2,109 +2,111 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   margin: 0 auto;
+  padding: 0;
 }
 
+.navbaritems {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  align-items: center;
+}
+
+.navbaritem-left, .navbaritem-right, .login-regis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbaritem-right {
+  width: 500px;
+}
+
+.login-regis {
+  width: 200px;
+}
+
+.logo-web {
+  width: 100x;
+  height: 65px;
+  margin-right: 30px;
+}
+
+/* searchbox start */
 .search-container {
-  position: relative;
-  display: inline-block;
-}
-
-.search-input {
-  padding-right: 30px; /* Add space for the icon */
+  display: flex;
+  justify-content: space-between;
   border-radius: 6px;
   border-width: 0px;
   background-color: #fdefff;
   height: 40px;
-  width: 356px;
+  width: 400px;
+  padding: 0 15px;
 }
 
-.search-button {
-  position: absolute;
-  top: 50%;
-  right: 1%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
+.search-container input, .search-container button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.search-input {
+  width: 100%;
 }
 
 .fa-magnifying-glass {
   color: #b959cb;
 }
 
+/* for search box input start */
+input[type="text"]::-webkit-input-placeholder {
+  text-indent: 10px;
+  color: #c968db;
+}
+
+input[type="text"]::-moz-placeholder {
+  text-indent: 10px;
+  color: #c968db;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  text-indent: 10px;
+  color: #c968db;
+}
+
+input[type="text"]:-moz-placeholder {
+  text-indent: 10px;
+  color: #c968db;
+}
+
+input[type="text"] {
+  text-indent: 10px;
+  color: #c968db;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+}
+/* for search box input end */
+/* searchbox end */
+
+/* promotion menu start */
 .promotion-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 15px;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #c968db;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-}
-
-.promotion-button img {
-  margin-right: 5px;
-}
-
-.button-text {
-  margin-left: 5px;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  text-indent: 10px; /* adjust the value as needed */
-  color: #c968db;
-}
-
-input[type="text"]::-moz-placeholder {
-  /* Firefox 19+ */
-  text-indent: 10px; /* adjust the value as needed */
-  color: #c968db;
-}
-
-input[type="text"]:-ms-input-placeholder {
-  /* IE 10+ */
-  text-indent: 10px; /* adjust the value as needed */
-  color: #c968db;
-}
-
-input[type="text"]:-moz-placeholder {
-  /* Firefox 18- */
-  text-indent: 10px; /* adjust the value as needed */
-  color: #c968db;
-}
-
-input[type="text"] {
-  text-indent: 10px; /* adjust the value as needed */
-  color: #c968db;
-}
-
-input[type="text"]:focus {
-  outline: none; /* Remove default outline */
-  border: none; /* Remove border */
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  margin-left: 4em;
-}
-
-.logo-web {
-  width: 100x;
-  height: 65px;
-  margin-right: 1em;
-}
-
-.search-container {
-  margin-right: 45em;
-}
-
-.promotion-container {
-  margin-left: 6em;
+  width: 170px;
+  padding: 10px 20px;
 }
 
 .promo-text {
@@ -121,8 +123,11 @@ input[type="text"]:focus {
   cursor: grab;
 }
 
+.button-text {
+  margin-left: 5px;
+}
+
 .login-button {
-  margin-right: 6em;
   width: 79px;
   height: 41px;
   color: #b959cb;
@@ -130,12 +135,13 @@ input[type="text"]:focus {
 }
 
 .register-button {
-  margin-right: 1em;
   width: 102px;
   height: 41px;
   color: #fefefe;
   background-color: #b959cb;
 }
+
+
 
 footer {
   display: flex;
@@ -182,11 +188,24 @@ footer {
   display: flex;
 }
 
+.tab-content {
+  display: none;
+}
+.tab-content:first-of-type {
+  display: block;
+}
+
 @media screen and (max-width: 800px) {
   .logo-web {
-    width: 189px;
-    height: 122px;
+    width: 140px;
+    height: auto;
   }
+
+  .navbarlogo .logo-web {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+
   .search-container {
     display: block; /* or flex */
     margin-top: 10em; /* Optional: Add some spacing between navbar items */
@@ -202,16 +221,6 @@ footer {
   .search-button {
     position: absolute;
     left: 90%;
-  }
-
-  /* Reset the margin-top of .logo-web */
-  .navbarlogo .logo-web {
-    margin-top: 0; /* Reset the margin-top to 0 */
-    margin-left: -70%;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
   }
 
   .navbaritem {

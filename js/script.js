@@ -21,3 +21,7 @@ tabLinks.forEach((link) => {
     document.querySelector(id).style.display = "block";
   });
 });
+
+// set the default tab to be tab1
+document.querySelector(".tab-list li:first-child").classList.add("active");
+document.querySelector("#tab1").style.display = "block";

@@ -171,6 +171,50 @@ input[type="text"]:focus {
 }
 /* image carousel end */
 
+/* bestseller */
+.bestseller-item {
+  margin-top: 100px;
+  width: 1040px;
+}
+
+.bestseller-item img {
+  width: 200px;
+  height: auto;
+}
+
+.bestseller-card-container {
+  display: flex;
+  width: 1040px;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+
+.bestseller-desc {
+  margin: 20px 0px 50px 0px;
+}
+
+.bestseller-product {
+  font-size: 18px;
+  width: 179px;
+  height: 50px;
+}
+
+.bestseller-price {
+  font-size: 16px;
+  color: gray;
+  width: 179px;
+}
+
+.bestseller-card button {
+  padding: 20px;
+  width: 100%;
+  background-color: #d9d4cc;
+  border: 0px;
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 footer {
   display: flex;
   justify-content: center;

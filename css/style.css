@@ -137,6 +137,37 @@ input[type="text"]:focus {
   background-color: #b959cb;
 }
 
+/* image carousel */
+.imageslider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.carousel {
+  margin: 0px 15px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  height: 590px;
+  width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 1200px;
+  float: left;
+}
+
+.imageslider button {
+  border: 0px;
+  background-color: transparent;
+}
+
+
 
 
 footer {

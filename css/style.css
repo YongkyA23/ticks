@@ -8,7 +8,7 @@
 .navbaritems {
   display: flex;
   justify-content: space-between;
-  margin: 0 100px;
+  margin: 10px 100px;
   align-items: center;
 }
 
@@ -148,6 +148,7 @@ input[type="text"]:focus {
 .carousel {
   margin: 0px 15px;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .carousel-container {
@@ -168,49 +169,177 @@ input[type="text"]:focus {
 }
 /* image carousel end */
 
-/* bestseller */
-.bestseller-item {
+/* bestseller start */
+.bestseller-concert {
   margin-top: 100px;
-  width: 1040px;
+  width: 100%;
+  background-color: #B982C3;
 }
 
-.bestseller-item img {
-  width: 200px;
-  height: auto;
+.bestseller-section {
+  width: 1080px;
+  margin: 30px auto;
+  padding-top: 30px;
+}
+
+.section-title, .section-desc {
+  color: #fefefe;
+  font-size: 24px;
+}
+
+.section-desc {
+  font-size: 18px;
+}
+
+.bestseller-concert img {
+  width: 250px;
+  height: 118px;
+}
+
+.bestseller-bg {
+  background-color: #E2CCE7;
+  padding: 40px 0px;
 }
 
 .bestseller-card-container {
   display: flex;
-  width: 1040px;
+  width: 1080px;
   justify-content: space-between;
-  margin: 30px 0px;
+}
+
+.bestseller-card {
+  background-color: #fefefe;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
 }
 
 .bestseller-desc {
-  margin: 20px 0px 50px 0px;
+  width: 230px;
+  margin: 10px;
 }
 
-.bestseller-product {
-  font-size: 18px;
-  width: 179px;
-  height: 50px;
+.bestseller-name {
+  font-size: 16px;
+  height: 65px;
+}
+
+.bestseller-date {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.bestseller-startsfrom {
+  margin-top: 20px;
+  font-size: 10px;
 }
 
 .bestseller-price {
-  font-size: 16px;
-  color: gray;
-  width: 179px;
+  font-size: 20px;
+  color: black;
 }
 
 .bestseller-card button {
-  padding: 20px;
+  margin-top: 10px;
+  padding: 10px 30px;
   width: 100%;
-  background-color: #d9d4cc;
+  background-color: #b959cb;
   border: 0px;
-  color: #fafafa;
-  font-size: 20px;
-  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
 }
+
+.bestseller-card a {
+  color: #fefefe;
+}
+
+/* bestseller end */
+
+/* recommendation start */
+.recommendation-concert {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #fefefe;
+  margin-bottom: 100px;
+}
+
+.recommendation-section {
+  width: 1080px;
+  margin: 30px auto;
+}
+
+.recommendation-section-title, .recommendation-section-desc {
+  color: black;
+  font-size: 24px;
+}
+
+.recommendation-section-desc {
+  font-size: 18px;
+}
+
+.recommendation-concert img {
+  width: 250px;
+  height: 118px;
+}
+
+.recommendation-bg {
+  background-color: #fefefe;
+}
+
+.recommendation-card-container {
+  display: flex;
+  width: 1080px;
+  justify-content: space-between;
+}
+
+.recommendation-card {
+  background-color: #fefefe;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0px 0px 30px 15px rgba(185, 130, 195, 0.1);
+}
+
+.recommendation-desc {
+  width: 230px;
+  margin: 10px;
+}
+
+.recommendation-name {
+  font-size: 16px;
+  height: 65px;
+}
+
+.recommendation-date {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.recommendation-startsfrom {
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.recommendation-price {
+  font-size: 20px;
+  color: black;
+}
+
+.recommendation-card button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  width: 100%;
+  background-color: #b959cb;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.recommendation-card a {
+  color: #fefefe;
+}
+
+/* recommendation end */
 
 footer {
   display: flex;

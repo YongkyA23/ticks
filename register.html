@@ -4,42 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swal2.css" />
+    <script
+      src="https://kit.fontawesome.com/099ac854b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ticks | Register</title>
   </head>
   <body>
     <div class="container">
       <div class="logoticks">
-        <img src="logo.png" alt="Logo ticks" />
+        <img src="img/logo.png" alt="Logo ticks" />
       </div>
-      <h2><b>Register your Ticks account</b></h2>
-      <p>Allready have an account?login</p>
+      <div class="pagetitle">Register your Ticks account</div>
+      <div class="link">
+        Already have an account? <a href="login.html">Login</a>
+      </div>
       <div class="form">
-        <form>
+        <form id="register-form">
           <div class="email">
             <label for="email">Email</label>
-            <input type="email" />
+            <input type="email" id="email" />
+            <p id="email-error" class="error"></p>
           </div>
           <div class="number">
-            <label for="number">Phone Number </label>
-            <input type="text" />
+            <label for="number">Phone Number</label>
+            <input type="text" id="phone" />
+            <p id="phone-error" class="error"></p>
           </div>
-
           <div class="gender">
-            <label for="email">Gender</label>
-            <select name="Gender" id="">
+            <label for="gender">Gender</label>
+            <select id="gender">
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
+            <p id="gender-error" class="error"></p>
           </div>
           <div class="password">
             <label for="password">Password</label>
-            <input type="password" />
+            <input type="password" id="password" />
+            <p id="password-error" class="error"></p>
           </div>
-
           <div class="terms">
-            <input type="checkbox" />
-            <label for="checkbox">Terms and Conditions</label>
+            <input type="checkbox" id="terms" />
+            <label for="terms">Terms and Conditions</label>
           </div>
           <div class="buttonReg">
             <input type="submit" value="Submit" />
@@ -48,4 +64,7 @@
       </div>
     </div>
   </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/swal2.js"></script>
+  <script src="js/script.js"></script>
 </html>

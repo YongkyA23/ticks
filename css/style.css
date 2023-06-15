@@ -12,7 +12,9 @@
   align-items: center;
 }
 
-.navbaritem-left, .navbaritem-right, .login-regis {
+.navbaritem-left,
+.navbaritem-right,
+.login-regis {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +48,8 @@
   padding: 0 15px;
 }
 
-.search-container input, .search-container button {
+.search-container input,
+.search-container button {
   padding: 0;
   margin: 0;
   background-color: transparent;
@@ -219,6 +222,14 @@ footer {
 }
 .tab-content:first-of-type {
   display: block;
+}
+
+.error {
+  color: red;
+}
+
+.form-control.error input {
+  border-color: red;
 }
 
 @media screen and (max-width: 800px) {

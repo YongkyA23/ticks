@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <div class="logoticks">
-        <img src="logo.png" alt="Logo ticks">
-    </div>
-    <h2><b>Register your Ticks account</b></h2>
-    <p> Allready have an account?login</p>
-    <form>
-     <label for="email">Email</label>
-     <br>
-     <input type="email">
-     <br>
-     <label for="number">Number
-     </label>
-     <br>
-     <input type="text">
-     <br>
-     <label for="Gender">Gender</label>
-     <br>
-     <input type="text">
-     <br>
-     <label for="password">Password</label>
-     <br>
-     <input type="password">
-     <br>
-     <label for="checkbox">term and conditions</label> </label>
-     <input type="checkbox">
-    </form>
-    <button>Register</button>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logoticks">
+        <img src="logo.png" alt="Logo ticks" />
+      </div>
+      <h2><b>Register your Ticks account</b></h2>
+      <p>Allready have an account?login</p>
+      <div class="form">
+        <form>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" />
+          </div>
+          <div class="number">
+            <label for="number">Phone Number </label>
+            <input type="text" />
+          </div>
 
-  </div>
-    
-</body> 
+          <div class="gender">
+            <label for="email">Gender</label>
+            <select name="Gender" id="">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" />
+          </div>
+
+          <div class="terms">
+            <input type="checkbox" />
+            <label for="checkbox">Terms and Conditions</label>
+          </div>
+          <div class="buttonReg">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

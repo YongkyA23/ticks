@@ -456,24 +456,29 @@ footer {
   background-size: cover;
 }
 
-.login-content {
-  margin: 100px auto;
+.lr-content {
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.form-button {
-  width: 300px;
-  margin: 50px auto;
+.title-lr {
+  font-size: 30px;
+  margin-top: 10px;
 }
 
-.login-form {
+.form-button {
+  width: 300px;
+  margin: 50px auto 0px auto;
+}
+
+.lr-form {
   display: flex;
   justify-content: center;
 }
 
-.input-field input {
+.input-field input, .input-field select {
   margin: 10px 0px;
   height: 40px;
   border-radius: 4px;
@@ -486,7 +491,7 @@ footer {
   padding-top: 10px;
 }
 
-.buttonLog input  {
+.buttonlr input  {
   width: 300px;
   height: 42px;
   margin: 30px 0px;
@@ -500,7 +505,26 @@ footer {
   color: #b959cb;
   font-weight: bold;
 }
+
+.close-form img {
+  width: 74px;
+  margin-top: 40px;
+}
 /* login page end */
+
+/* regis page start */
+.input-field select {
+  padding: 0px 10px;
+  font-family: "Nunito", sans-serif;
+  padding-right: 10px;
+}
+
+.link-close {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* regis page end */
 
 @media screen and (max-width: 800px) {
   .logo-web {

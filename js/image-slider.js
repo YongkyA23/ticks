@@ -1,62 +1,49 @@
-var $slider = $(".carousel");
+window.onload = function () {
+  var $slider = $(".carousel");
+  var $sliderContainer = $(".carousel-container");
+  var $slides = $(".carousel-image");
+  var $slideWidth = $slides.width();
+  var $slideHeight = $slides.height();
+  var $slideCount = $slides.length;
+  var $slideIndex = 0;
+  var $totalWidth = $slideCount * $slideWidth;
+  var $interval = 10000;
 
-var $sliderContainer = $(".carousel-container");
-var $slides = $(".carousel-image");
+  var $dragging = false;
 
-var $slideWidth = $slides.width();
+  $slider.css({ width: $slideWidth, height: $slideHeight });
+  $sliderContainer.css({
+    width: $totalWidth,
+    height: $slideHeight,
+    marginLeft: -$slideWidth,
+  });
+  $slides.css({ width: $slideWidth, height: $slideHeight });
 
-var $slideHeight = $slides.height();
+  function goToSlide(index) {
+    if (index < 0) {
+      index = $slideCount - 1;
+    } else if (index >= $slideCount) {
+      index = 0;
+    }
 
-var $slideCount = $slides.length;
+    var marginLeft = index * -$slideWidth;
 
-var $slideIndex = 0;
+    $sliderContainer.animate({ marginLeft: marginLeft }, 500);
 
-var $totalWidth = $slideCount * $slideWidth;
-
-$slider.css({ width: $slideWidth, height: $slideHeight });
-
-$sliderContainer.css({
-  width: $totalWidth,
-  height: $slideHeight,
-  marginLeft: -$slideWidth,
-});
-
-$slides.css({ width: $slideWidth, height: $slideHeight });
-
-function goToSlide(index) {
-  if (index < 0) {
-    index = $slideCount - 1;
-  } else if (index >= $slideCount) {
-    index = 0;
+    $slideIndex = index;
   }
 
-  $sliderContainer.css({ marginLeft: index * -$slideWidth });
-
-  $slideIndex = index;
-}
-
-$("#left-arrow").click(function () {
-  $sliderContainer.animate(
-    {
-      left: +$slideWidth,
-    },
-    "slow",
-    () => {
-      $(".carousel-image:last-child").prependTo(".carousel-image-container");
-      $sliderContainer.css("left", "");
+  setInterval(function () {
+    if (!$dragging) {
+      goToSlide($slideIndex + 1);
     }
-  );
-});
+  }, $interval);
 
-$("#right-arrow").click(function () {
-  $sliderContainer.animate(
-    {
-      left: -$slideWidth,
-    },
-    "slow",
-    () => {
-      $(".carousel-image:first-child").appendTo(".carousel-image-container");
-      $sliderContainer.css("left", "");
-    }
-  );
-});
+  $("#left-arrow").click(function () {
+    goToSlide($slideIndex - 1);
+  });
+
+  $("#right-arrow").click(function () {
+    goToSlide($slideIndex + 1);
+  });
+};

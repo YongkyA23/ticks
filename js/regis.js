@@ -1,4 +1,4 @@
-const regisForm = document.getElementById("register-form");
+const regisForm = document.getElementById("lr-form");
 const emailInput = document.getElementById("email");
 const phoneInput = document.getElementById("phone");
 const genderInput = document.getElementById("gender");

@@ -19,34 +19,50 @@
     ></script>
     <title>Ticks | Login</title>
   </head>
-  <body>
-    <div class="login-content">
+  <body class="body-lr">
+    <div class="lr-content">
       <div class="logoticks">
         <img src="img/logo.png" alt="Logo ticks" class="logo-web" />
       </div>
 
-      <div class="form">
-        <form id="login-form">
+      <div class="title-lr">Login to your Ticks account</div>
+      
+      <div class="form-button">
+        <form id="lr-form">
+
           <div class="email">
             <label for="email">Email</label>
-            <input type="email" id="email" />
-            <p id="email-error" class="error"></p>
-          </div>
-          <div class="password">
-            <label for="password">Password</label>
-            <input type="password" id="password" />
-            <p id="password-error" class="error"></p>
-          </div>
-          <div class="buttonLog">
-            <input type="submit" value="Submit" />
+            <div class="input-field">
+              <input type="email" id="email"/>
+              <p id="email-error" class="error"></p>
+            </div>
           </div>
 
-          <div class="pagetitle">Register your Ticks account</div>
+          <div class="password">
+            <label for="password">Password</label>
+            <div class="input-field">
+              <input type="password" id="password" />
+              <p id="password-error" class="error"></p>
+            </div>
+          </div>
+
+          <div class="buttonlr">
+            <input type="submit" value="Submit" />
+          </div>
+          
         </form>
       </div>
 
-      <div class="link">
-        Already have an account? <a href="login.html">Login</a>
+      <div class="link-close">
+        <div class="link">
+          Don't have an account yet? <a href="register.html">Register</a>
+        </div>
+  
+        <div class="close-form">
+          <a href="">
+            <img src="img/close.svg" alt="" href="">
+          </a>
+        </div>
       </div>
     </div>
   </body>

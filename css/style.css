@@ -448,8 +448,83 @@ footer {
 /* promotion page end */
 
 /* login page start */
+.body-lr {
+  background-image: url("/img/background\ loginregis.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.lr-content {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-lr {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.form-button {
+  width: 300px;
+  margin: 50px auto 0px auto;
+}
+
+.lr-form {
+  display: flex;
+  justify-content: center;
+}
+
+.input-field input, .input-field select {
+  margin: 10px 0px;
+  height: 40px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: #fdefff;
+  width: 300px;
+}
+
+.password {
+  padding-top: 10px;
+}
+
+.buttonlr input  {
+  width: 300px;
+  height: 42px;
+  margin: 30px 0px;
+  background-color: #C968DB;
+  color: #fefefe;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.link a {
+  color: #b959cb;
+  font-weight: bold;
+}
+
+.close-form img {
+  width: 74px;
+  margin-top: 40px;
+}
 /* login page end */
+
+/* regis page start */
+.input-field select {
+  padding: 0px 10px;
+  font-family: "Nunito", sans-serif;
+  padding-right: 10px;
+}
+
+.link-close {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* regis page end */
 
 @media screen and (max-width: 800px) {
   .logo-web {

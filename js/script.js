@@ -1,4 +1,3 @@
-// Get the form and input elements
 const regisForm = document.getElementById("register-form");
 const emailInput = document.getElementById("email");
 const phoneInput = document.getElementById("phone");
@@ -6,21 +5,16 @@ const genderInput = document.getElementById("gender");
 const passwordInput = document.getElementById("password");
 const termsInput = document.getElementById("terms");
 
-// Load existing users from localStorage
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
-// Add event listener to the form submission
 regisForm.addEventListener("submit", function (event) {
-  // Prevent the default form submission
   event.preventDefault();
 
-  // Validate the input
   const emailError = validateEmail(emailInput.value);
   const phoneError = validatePhoneNumber(phoneInput.value);
   const genderError = validateGender(genderInput.value);
   const passwordError = validatePassword(passwordInput.value);
 
-  // If there are errors, display them and highlight the input fields
   if (emailError) {
     showError(emailError, emailInput);
   } else {
@@ -42,12 +36,9 @@ regisForm.addEventListener("submit", function (event) {
     removeError(passwordInput);
   }
 
-  // If there are no errors, store the data in the users array and in localStorage
   if (!emailError && !phoneError && !genderError && !passwordError) {
-    // Generate a unique ID for the user
     const id = generateUniqueId();
 
-    // Create an object with the user data
     const user = {
       id: id,
       email: emailInput.value,
@@ -57,23 +48,19 @@ regisForm.addEventListener("submit", function (event) {
       terms: termsInput.checked,
     };
 
-    // Add the user data to the users array
     users.push(user);
 
-    // Store the users array in localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
-    // Redirect to a success page
     Swal.fire(
       "Success!",
       "Your account has been successfully registered!",
       "success"
     );
-    window.location.href = "index.html";
+    window.location.href = "login.html";
   }
 });
 
-// Function to validate the email format
 function validateEmail(email) {
   if (!email) {
     return "Email is required";
@@ -84,7 +71,6 @@ function validateEmail(email) {
   return null;
 }
 
-// Function to validate the phone number format
 function validatePhoneNumber(phone) {
   if (!phone) {
     return "Phone number is required";
@@ -95,7 +81,6 @@ function validatePhoneNumber(phone) {
   return null;
 }
 
-// Function to validate the gender selection
 function validateGender(gender) {
   if (!gender) {
     return "Gender is required";
@@ -103,7 +88,6 @@ function validateGender(gender) {
   return null;
 }
 
-// Function to validate the password length
 function validatePassword(password) {
   if (!password) {
     return "Password is required";

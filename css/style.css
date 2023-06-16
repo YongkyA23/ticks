@@ -448,12 +448,19 @@ footer {
 /* promotion page end */
 
 /* login page start */
+.body-lr {
+  background-image: url("/img/background\ loginregis.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .login-content {
   margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("");
 }
 
 .form-button {

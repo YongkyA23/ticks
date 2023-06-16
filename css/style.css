@@ -448,7 +448,9 @@ footer {
 /* promotion page end */
 
 /* login page start */
-
+.form {
+  background-image: url('img/background loginregis.png');
+}
 /* login page end */
 
 @media screen and (max-width: 800px) {

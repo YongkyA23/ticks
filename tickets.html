@@ -21,35 +21,47 @@
     <div class="container">
       <nav class="navbar">
         <div class="navbaritems">
-          <div class="navbarlogo">
-            <a href="/index.html">
-              <img src="img/logo.png" alt="logo.png" class="logo-web" />
-            </a>
-          </div>
+          <div class="navbaritem-left">
+            <div class="navbarlogo">
+              <a href="/index.html">
+                <img src="img/logo.png" alt="logo.png" class="logo-web" />
+              </a>
+            </div>
 
-          <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search..." />
-            <button type="submit" class="search-button">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <div class="search-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search ..."
+              />
+              <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
           </div>
 
           <div class="navbaritem-right">
-            <div class="promotion-container">
-              <button type="menu" class="promotion-button">
+            <div class="menu-container">
+              <button type="menu" class="menu-button">
+                <img src="img/ticket-icon.png" alt="" srcset="" />
+                <a href="tickets.html" class="menu-text">Tickets</a>
+              </button>
+            </div>
+            <div class="menu-container">
+              <button type="menu" class="menu-button">
                 <img src="img/discount.png" alt="" srcset="" />
-                <span class="promo-text">Promotions</span>
+                <a href="promotion.html" class="menu-text">Promotions</a>
               </button>
             </div>
             <div class="login-regis">
               <div class="navbaritem">
-                <button href="#" type="menu" class="register-button nav-button">
-                  <span>Register</span>
+                <button type="menu" class="register-button nav-button">
+                  <a href="register.html">Register</a>
                 </button>
               </div>
               <div class="navbaritem">
-                <button href="#" type="menu" class="login-button nav-button">
-                  <span>Login</span>
+                <button type="menu" class="login-button nav-button">
+                  <a href="login.html">Login</a>
                 </button>
               </div>
             </div>
@@ -74,214 +86,211 @@
         <div class="tickets">
           <div class="tab">
             <ul class="tab-list">
-              <li><a href="#tab1">Upcoming</a></li>
-              <li><a href="#tab2">Ongoing</a></li>
+              <li><a href="#tab1" class="upcoming">Upcoming</a></li>
+              <li><a href="#tab2" class="ongoing">Ongoing</a></li>
             </ul>
           </div>
-          <div id="tab1" class="tab-content" style="display: block">
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser1.jpg" alt="konser1" />
-              </div>
-              <div class="card-name">WE THE FEST 2023</div>
-              <div class="card-date">21 Jul - 23 Jul 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 2.500.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser2.jpg" alt="konser2" />
-              </div>
-              <div class="card-name">Festival Koplo Indonesia</div>
-              <div class="card-date">29 Jul - 30 Jul 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 99.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser3.jpg" alt="konser3" />
-              </div>
-              <div class="card-name">
-                VOL 03 Sewaktu Bermusik di Pantai Raisa Andriana
-              </div>
-              <div class="card-date">18 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 325.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
+          <div id="tab1" class="tab-content">
+            <div class="tickets-concert">
+              <div class="card-container">
+    
+                <div class="card">
+                  <img src="/img/konser1.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">WE THE FEST 2023</div>
+                    <div class="date">21 Jul - 23 Jul 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp2.500.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser2.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Festival Koplo Indonesia</div>
+                    <div class="date">29 Jul - 30 Jul 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp99.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser3.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">VOL 03 Sewaktu Bermusik di Pantai Raisa Andriana</div>
+                    <div class="date">18 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp325.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser4.jpeg" alt="" />
+                  <div class="desc">
+                    <div class="name">Glenn Fredly: 25 Years of Music</div>
+                    <div class="date">24 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp700.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser4.jpeg" alt="konser4" />
-              </div>
-              <div class="card-name">Glenn Fredly: 25 Years of Music</div>
-              <div class="card-date">24 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 700.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser5.jpg" alt="konser5" />
-              </div>
-              <div class="card-name">Poppies Twentys Suroboyo</div>
-              <div class="card-date">17 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 55.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser6.jpg" alt="konser6" />
-              </div>
-              <div class="card-name">
-                WFestival Music Concert Pesona Dywantara 2023
-              </div>
-              <div class="card-date">17 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 15.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
+
+            <div class="tickets-concert">
+              <div class="card-container">
+    
+                <div class="card">
+                  <img src="/img/konser5.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Poppies Twentys Suroboyo</div>
+                    <div class="date">17 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp55.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser6.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">WFestival Music Concert Pesona Dywantara 2023</div>
+                    <div class="date">17 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp15.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/aldi taher.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Aldi Taher Martin Live in Concert - Tribute to Coldplay</div>
+                    <div class="date">03 Jul 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp200.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/tutur batin.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Pertunjukan Tutur Batin Live Concert 2023 - Surabaya</div>
+                    <div class="date">09 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp379.750,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
           <div id="tab2" class="tab-content">
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser1.jpg" alt="konser1" />
-              </div>
-              <div class="card-name">WE THE FEST 2024</div>
-              <div class="card-date">21 Jul - 23 Jul 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 2.500.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser2.jpg" alt="konser2" />
-              </div>
-              <div class="card-name">Festival Koplo Indonesia</div>
-              <div class="card-date">29 Jul - 30 Jul 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 99.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser3.jpg" alt="konser3" />
-              </div>
-              <div class="card-name">
-                VOL 03 Sewaktu Bermusik di Pantai Raisa Andriana
-              </div>
-              <div class="card-date">18 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 325.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
+            <div class="tickets-concert">
+              <div class="card-container">
+    
+                <div class="card">
+                  <img src="/img/konser1.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">WE THE FEST 2023</div>
+                    <div class="date">21 Jul - 23 Jul 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp2.500.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser2.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Festival Koplo Indonesia</div>
+                    <div class="date">29 Jul - 30 Jul 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp99.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser3.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">VOL 03 Sewaktu Bermusik di Pantai Raisa Andriana</div>
+                    <div class="date">18 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp325.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser4.jpeg" alt="" />
+                  <div class="desc">
+                    <div class="name">Glenn Fredly: 25 Years of Music</div>
+                    <div class="date">24 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp700.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser4.jpeg" alt="konser4" />
-              </div>
-              <div class="card-name">Glenn Fredly: 25 Years of Music</div>
-              <div class="card-date">24 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 700.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
+
+            <div class="tickets-concert">
+              <div class="card-container">
+    
+                <div class="card">
+                  <img src="/img/konser5.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Poppies Twentys Suroboyo</div>
+                    <div class="date">17 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp55.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/konser6.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">WFestival Music Concert Pesona Dywantara 2023</div>
+                    <div class="date">17 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp15.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/aldi taher.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Aldi Taher Martin Live in Concert - Tribute to Coldplay</div>
+                    <div class="date">03 Jul 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp200.000,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img src="/img/tutur batin.jpg" alt="" />
+                  <div class="desc">
+                    <div class="name">Pertunjukan Tutur Batin Live Concert 2023 - Surabaya</div>
+                    <div class="date">09 Jun 2023</div>
+                    <div class="startsfrom">starts from</div>
+                    <div class="price">Rp379.750,00</div>
+                    <button><a href="ticketdetail.html">See Details</a></button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser5.jpg" alt="konser5" />
-              </div>
-              <div class="card-name">Poppies Twentys Suroboyo</div>
-              <div class="card-date">17 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 55.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
-            <div class="ticket-cards">
-              <div class="card-img">
-                <img src="img/konser6.jpg" alt="konser6" />
-              </div>
-              <div class="card-name">
-                WFestival Music Concert Pesona Dywantara 2023
-              </div>
-              <div class="card-date">17 Jun 2023</div>
-              <div class="card-price">
-                <div class="start-text">starts from</div>
-                <div class="card-price">Rp. 15.000</div>
-              </div>
-              <div class="cardBtn">
-                <a href=""
-                  ><button class="detail-button">See Details</button></a
-                >
-              </div>
-            </div>
+            
           </div>
+
         </div>
       </main>
       <footer>

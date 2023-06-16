@@ -23,7 +23,7 @@
 }
 
 .navbaritem-right {
-  width: 500px;
+  width: 600px;
 }
 
 .login-regis {
@@ -98,7 +98,7 @@ input[type="text"]:focus {
 /* searchbox end */
 
 /* promotion menu start */
-.promotion-button {
+.menu-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,23 +107,42 @@ input[type="text"]:focus {
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  cursor: pointer;
   width: 170px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
-.promo-text {
+.menu-button img {
+  margin-right: 8px;
+}
+
+.menu-text {
   font-size: 18px;
+  margin: 0;
+}
+
+.menu-text:active {
+  color: #fefefe;
 }
 
 .nav-button {
   border-radius: 8px;
   border: none;
   font-size: 18px;
+  opacity: 70%;
+}
+
+.register-button a {
+  color: #fefefe;
+}
+
+.login-button a {
+  color: #b959cb;
 }
 
 .nav-button:hover {
-  cursor: grab;
+  cursor: pointer;
+  opacity: 100%;
 }
 
 .login-button {
@@ -204,56 +223,58 @@ input[type="text"]:focus {
   padding: 40px 0px;
 }
 
-.bestseller-card-container {
+.card-container {
   display: flex;
   width: 1080px;
   justify-content: space-between;
 }
 
-.bestseller-card {
+.card {
   background-color: #fefefe;
   border-radius: 8px;
   overflow: hidden;
   margin: 0;
+  box-shadow: 0px 0px 30px 15px rgba(185, 130, 195, 0.1);
 }
 
-.bestseller-desc {
+.desc {
   width: 230px;
   margin: 10px;
 }
 
-.bestseller-name {
+.name {
   font-size: 16px;
   height: 65px;
 }
 
-.bestseller-date {
+.date {
   font-size: 14px;
   color: #8f8f8f;
 }
 
-.bestseller-startsfrom {
+.startsfrom {
   margin-top: 20px;
   font-size: 10px;
 }
 
-.bestseller-price {
+.price {
   font-size: 20px;
   color: black;
 }
 
-.bestseller-card button {
+.card button {
   margin-top: 10px;
   padding: 10px 30px;
   width: 100%;
-  background-color: #b959cb;
-  border: 0px;
+  background-color: #FDEFFF;
+  border: 1px solid #b959cb;
   border-radius: 5px;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.bestseller-card a {
-  color: #fefefe;
+.card a {
+  color: #b959cb;
 }
 
 /* bestseller end */
@@ -287,59 +308,6 @@ input[type="text"]:focus {
 
 .recommendation-bg {
   background-color: #fefefe;
-}
-
-.recommendation-card-container {
-  display: flex;
-  width: 1080px;
-  justify-content: space-between;
-}
-
-.recommendation-card {
-  background-color: #fefefe;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 0;
-  box-shadow: 0px 0px 30px 15px rgba(185, 130, 195, 0.1);
-}
-
-.recommendation-desc {
-  width: 230px;
-  margin: 10px;
-}
-
-.recommendation-name {
-  font-size: 16px;
-  height: 65px;
-}
-
-.recommendation-date {
-  font-size: 14px;
-  color: #8f8f8f;
-}
-
-.recommendation-startsfrom {
-  margin-top: 20px;
-  font-size: 10px;
-}
-
-.recommendation-price {
-  font-size: 20px;
-  color: black;
-}
-
-.recommendation-card button {
-  margin-top: 10px;
-  padding: 10px 30px;
-  width: 100%;
-  background-color: #b959cb;
-  border: 0px;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.recommendation-card a {
-  color: #fefefe;
 }
 
 /* recommendation end */
@@ -404,6 +372,68 @@ footer {
 .form-control.error input {
   border-color: red;
 }
+
+/* tickets page start */
+.tab {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+  width: 300px;
+}
+
+.tab-list li {
+  padding: 10px 20px;
+  border-bottom: 3px solid #b959cb;
+}
+
+.tab-list a {
+  color: #676767;
+}
+
+.tab-content {
+  margin-bottom: 100px;
+}
+
+.tickets-concert {
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.tickets-concert img {
+  width: 250px;
+  height: 118px;
+}
+/* tickets page end */
+
+/* promotion page start */
+.promotion-title {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.promotion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 750px;
+  margin: 30px 0px 100px 0px;
+}
+
+.promotion-banner img {
+  width: 330px;
+  height: 160px;
+}
+
+.offerBtn {
+  margin: 0px 10px 10px 10px;
+}
+/* promotion page end */
 
 @media screen and (max-width: 800px) {
   .logo-web {

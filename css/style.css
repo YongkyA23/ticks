@@ -448,9 +448,47 @@ footer {
 /* promotion page end */
 
 /* login page start */
-.form {
-  background-image: url('img/background loginregis.png');
+.login-content {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.form-button {
+  width: 300px;
+  margin: 50px auto;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+}
+
+.input-field input {
+  margin: 10px 0px;
+  height: 40px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: #fdefff;
+  width: 300px;
+}
+
+.password {
+  padding-top: 10px;
+}
+
+.buttonLog input  {
+  width: 300px;
+  height: 42px;
+  margin: 30px 0px;
+  background-color: #C968DB;
+  color: #fefefe;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.
 /* login page end */
 
 @media screen and (max-width: 800px) {

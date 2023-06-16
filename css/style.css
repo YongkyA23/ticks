@@ -398,7 +398,7 @@ footer {
 }
 
 .tab-list li:hover {
-  border-bottom: 3px solid #b959cb;
+  color: #000;
   cursor: pointer;
 }
 
@@ -446,6 +446,10 @@ footer {
   margin: 0px 10px 10px 10px;
 }
 /* promotion page end */
+
+/* login page start */
+
+/* login page end */
 
 @media screen and (max-width: 800px) {
   .logo-web {

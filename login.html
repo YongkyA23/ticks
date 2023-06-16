@@ -19,31 +19,37 @@
     <title>Ticks | Login</title>
   </head>
   <body>
-    <div class="logoticks">
-      <img src="img/logo.png" alt="Logo ticks" />
-    </div>
-    <div class="pagetitle">Register your Ticks account</div>
-    <div class="link">
-      Already have an account? <a href="login.html">Login</a>
-    </div>
-    <div class="form">
-      <form id="login-form">
-        <div class="email">
-          <label for="email">Email</label>
-          <input type="email" id="email" />
-          <p id="email-error" class="error"></p>
-        </div>
-        <div class="password">
-          <label for="password">Password</label>
-          <input type="password" id="password" />
-          <p id="password-error" class="error"></p>
-        </div>
-        <div class="buttonLog">
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
+    <div class="login-content">
+      <div class="logoticks">
+        <img src="img/logo.png" alt="Logo ticks" class="logo-web"/>
+      </div>
+      
+      <div class="form">
+        <form id="login-form">
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <p id="email-error" class="error"></p>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <p id="password-error" class="error"></p>
+          </div>
+          <div class="buttonLog">
+            <input type="submit" value="Submit" />
+          </div>
+  
+          <div class="pagetitle">Register your Ticks account</div>
+        </form>
+      </div>
+  
+      <div class="link">
+        Already have an account? <a href="login.html">Login</a>
+      </div>
     </div>
   </body>
+  
   <script src="js/jquery.js"></script>
   <script src="js/swal2.js"></script>
   <script src="js/login.js"></script>

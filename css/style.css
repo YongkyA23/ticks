@@ -453,6 +453,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url("");
 }
 
 .form-button {
@@ -488,7 +489,10 @@ footer {
   border: 0px;
 }
 
-.
+.link a {
+  color: #b959cb;
+  font-weight: bold;
+}
 /* login page end */
 
 @media screen and (max-width: 800px) {

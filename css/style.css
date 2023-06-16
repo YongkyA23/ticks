@@ -767,7 +767,7 @@ footer {
     margin-top: 20px;
     margin-left: 120px;
     width: 600px;
-    height: 200px;
+    height: 220px;
   }
 
   .concertinfocard .concertname {
@@ -789,5 +789,18 @@ footer {
 
   .ticketcard {
     margin-left: 100px;
+  }
+
+  .navbar {
+    width: 800px;
+  }
+
+  .navbaritems {
+    width: 800px;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .navbaritem-right {
+    margin-left: -50px;
   }
 }

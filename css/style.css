@@ -765,7 +765,13 @@ footer {
   }
   .concertinfocard {
     margin-top: 20px;
-    margin-left: 250px;
+    margin-left: 120px;
+    width: 600px;
+    height: 200px;
+  }
+
+  .concertinfocard .concertname {
+    margin-top: 10px;
   }
 
   .descriptiontab {

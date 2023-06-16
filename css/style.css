@@ -195,7 +195,7 @@ input[type="text"]:focus {
 .bestseller-concert {
   margin-top: 100px;
   width: 100%;
-  background-color: #B982C3;
+  background-color: #b982c3;
 }
 
 .bestseller-section {
@@ -204,7 +204,8 @@ input[type="text"]:focus {
   padding-top: 30px;
 }
 
-.section-title, .section-desc {
+.section-title,
+.section-desc {
   color: #fefefe;
   font-size: 24px;
 }
@@ -219,7 +220,7 @@ input[type="text"]:focus {
 }
 
 .bestseller-bg {
-  background-color: #E2CCE7;
+  background-color: #e2cce7;
   padding: 40px 0px;
 }
 
@@ -266,7 +267,7 @@ input[type="text"]:focus {
   margin-top: 10px;
   padding: 10px 30px;
   width: 100%;
-  background-color: #FDEFFF;
+  background-color: #fdefff;
   border: 1px solid #b959cb;
   border-radius: 5px;
   font-size: 14px;
@@ -292,7 +293,8 @@ input[type="text"]:focus {
   margin: 30px auto;
 }
 
-.recommendation-section-title, .recommendation-section-desc {
+.recommendation-section-title,
+.recommendation-section-desc {
   color: black;
   font-size: 24px;
 }
@@ -387,7 +389,17 @@ footer {
 
 .tab-list li {
   padding: 10px 20px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-list li.active {
   border-bottom: 3px solid #b959cb;
+}
+
+.tab-list li:hover {
+  border-bottom: 3px solid #b959cb;
+  cursor: pointer;
 }
 
 .tab-list a {

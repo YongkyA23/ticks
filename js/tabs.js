@@ -9,6 +9,10 @@ tabLinks.forEach((link) => {
       content.style.display = "none";
     });
     document.querySelector(id).style.display = "block";
+    tabLinks.forEach((link) => {
+      link.parentElement.classList.remove("active");
+    });
+    link.parentElement.classList.add("active");
   });
 });
 

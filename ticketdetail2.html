@@ -20,43 +20,65 @@
   <body>
     <div class="container">
       <nav class="navbar">
-        <div class="navbarlogo">
-          <a href="/index.html">
-            <img src="img/logo.png" alt="logo.png" class="logo-web" />
-          </a>
-        </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon" id="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
         <div class="navbaritems">
-          <div class="navbaritem search-container">
-            <input type="text" class="search-input" placeholder="Search..." />
-            <button type="submit" class="search-button">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+          <div class="navbaritem-left">
+            <div class="navbarlogo">
+              <a href="/index.html">
+                <img src="img/logo.png" alt="logo.png" class="logo-web" />
+              </a>
+            </div>
+
+            <div class="search-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search ..."
+              />
+              <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
           </div>
-          <div class="navbaritem mobiledesc">
+
+          <div class="navbaritem-right">
+            <div class="menu-container">
+              <button type="menu" class="menu-button">
+                <img src="img/ticket-icon.png" alt="" srcset="" />
+                <a href="tickets.html" class="menu-text">Tickets</a>
+              </button>
+            </div>
+            <div class="menu-container">
+              <button type="menu" class="menu-button">
+                <img src="img/discount.png" alt="" srcset="" />
+                <a href="promotion.html" class="menu-text">Promotions</a>
+              </button>
+            </div>
+            <div class="login-regis">
+              <div class="navbaritem">
+                <button type="menu" class="register-button nav-button">
+                  <a href="register.html">Register</a>
+                </button>
+              </div>
+              <div class="navbaritem">
+                <button type="menu" class="login-button nav-button">
+                  <a href="login.html">Login</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- menu mobile version -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <div class="mobiledesc">
             Get into your account to access all of Ticks feature.
           </div>
-          <div class="navbaritem promotion-container">
-            <button type="menu" class="promotion-button">
-              <img src="img/discount.png" alt="" srcset="" />
-              <span class="promo-text">Promotions</span>
-            </button>
-          </div>
-          <div class="navbaritem">
-            <button href="#" type="menu" class="register-button nav-button">
-              <span>Register</span>
-            </button>
-          </div>
-          <div class="navbaritem">
-            <button href="#" type="menu" class="login-button nav-button">
-              <span>Login</span>
-            </button>
-          </div>
+          <!-- menu mobile version -->
         </div>
       </nav>
       <main>

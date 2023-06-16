@@ -701,7 +701,7 @@ footer {
 @media screen and (max-width: 800px) {
   .card-container {
     flex-wrap: wrap;
-    width: 780px;
+    width: 280px;
     justify-content: space-between;
   }
 

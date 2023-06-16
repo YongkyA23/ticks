@@ -546,4 +546,51 @@ footer {
     margin-left: -64px;
     height: 250px;
   }
+  .card-container {
+    flex-wrap: wrap;
+    width: 780px;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .bestseller-section {
+    width: 780px;
+  }
+
+  .section-title {
+    width: 780px;
+    margin-left: 5px;
+  }
+
+  .section-desc {
+    width: 780px;
+    margin-left: 5px;
+  }
+
+  .recommendation-section {
+    width: 780px;
+  }
+
+  .recommendation-section-title {
+    width: 780px;
+    margin-left: 5x;
+  }
+
+  .recommendation-section-desc {
+    width: 780px;
+    margin-left: 5px;
+  }
+
+  /* .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+  } */
 }
